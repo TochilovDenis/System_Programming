@@ -11,7 +11,15 @@ namespace lesson_01
     {
         static void Main(string[] args)
         {
-            Process prc = Process.Start(@"C:\Users\dex\AppData\Local\Yandex\YandexBrowser\Application\browser.exe");
+            ProcessStartInfo procInfo = new ProcessStartInfo();
+
+            //исполняемый файл программы - браузер
+            procInfo.FileName = @"C:\Users\dex\AppData\Local\Yandex\YandexBrowser\Application\browser.exe";
+
+            // аргументы запуска - адрес интернет-ресурса
+            procInfo.Arguments = "https://metanit.com";
+            Process.Start(procInfo);
+
         }
     }
 }
