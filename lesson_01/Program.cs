@@ -16,11 +16,11 @@ namespace lesson_01
             {
                 Console.WriteLine("--------------------------------");
                 Console.WriteLine($"ID: {process.Id}  Name: {process.ProcessName} StartTime: {process.StartTime}");
-                ProcessThreadCollection processThreads = process.Threads;
-
-                foreach(ProcessThread prcth in processThreads)
+                
+                ProcessModuleCollection prcModul = process.Modules;
+                foreach (ProcessModule module in prcModul)
                 {
-                    Console.WriteLine($"ID: {prcth.Id} StartTime: {prcth.StartTime} TotalProcessorTime: {prcth.TotalProcessorTime}");
+                    Console.WriteLine($"Name: {module.ModuleName} FileName: {module.FileName} Version: {module.FileVersionInfo}");
                 }
             }
 
