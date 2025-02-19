@@ -11,11 +11,11 @@ namespace lesson_01
     {
         static void Main(string[] args)
         {
-            var process = Process.GetCurrentProcess();
-
-            Console.WriteLine($"id : {process.Id}");
-            Console.WriteLine($"process name: {process.ProcessName}");
-            Console.WriteLine($"используемая память: {process.VirtualMemorySize64}");
+            foreach (Process process in Process.GetProcesses())
+            {
+                // выводим id и имя процесса
+                Console.WriteLine($"ID: {process.Id}  Name: {process.ProcessName}");
+            }
 
         }
     }
