@@ -11,6 +11,12 @@ namespace lesson_01
     {
         static void Main(string[] args)
         {
+            var process = Process.GetCurrentProcess();
+
+            Console.WriteLine($"id : {process.Id}");
+            Console.WriteLine($"process name: {process.ProcessName}");
+            Console.WriteLine($"используемая память: {process.VirtualMemorySize64}");
+
         }
     }
 }
