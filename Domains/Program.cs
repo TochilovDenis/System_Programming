@@ -11,16 +11,10 @@ namespace Domains
     {
         static void Main(string[] args)
         {
-            AppDomain domain = AppDomain.CurrentDomain;
-            Console.WriteLine($"FriendlyName: {domain.FriendlyName}");
-            Console.WriteLine($"Base Directory: {domain.BaseDirectory}");
-            Console.WriteLine();
+            AppDomain domain = AppDomain.CreateDomain("Domain test");
 
-            Assembly[] assemblies = domain.GetAssemblies();
-            foreach (Assembly asm in assemblies)
-            {
-                Console.WriteLine(asm.GetName().Name);
-            }
+            // Запуск тестовых приложенй в контексте вторичных доменов
+            domain.ExecuteAssembly(@"C:\DEX\Academy_TOP\System_Programming\Domains\bin\Debug\Domains.exe");
         }
     }
 }
