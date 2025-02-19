@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "lesson_01", "lesson_01\less
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domains", "Domains\Domains.csproj", "{BC32CF72-74F4-4A11-91B3-D21A40A0F863}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domians App Forms", "Domians App Forms\Domians App Forms.csproj", "{9DE94FB4-3B7D-4165-8838-8243EC66AE92}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{BC32CF72-74F4-4A11-91B3-D21A40A0F863}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BC32CF72-74F4-4A11-91B3-D21A40A0F863}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BC32CF72-74F4-4A11-91B3-D21A40A0F863}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9DE94FB4-3B7D-4165-8838-8243EC66AE92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DE94FB4-3B7D-4165-8838-8243EC66AE92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DE94FB4-3B7D-4165-8838-8243EC66AE92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DE94FB4-3B7D-4165-8838-8243EC66AE92}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
