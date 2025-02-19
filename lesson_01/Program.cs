@@ -11,19 +11,7 @@ namespace lesson_01
     {
         static void Main(string[] args)
         {
-            Process[] vsProcs = Process.GetProcessesByName("devenv");
-            foreach(var process in vsProcs)
-            {
-                Console.WriteLine("--------------------------------");
-                Console.WriteLine($"ID: {process.Id}  Name: {process.ProcessName} StartTime: {process.StartTime}");
-                
-                ProcessModuleCollection prcModul = process.Modules;
-                foreach (ProcessModule module in prcModul)
-                {
-                    Console.WriteLine($"Name: {module.ModuleName} FileName: {module.FileName} Version: {module.FileVersionInfo}");
-                }
-            }
-
+            Process prc = Process.Start(@"C:\Users\dex\AppData\Local\Yandex\YandexBrowser\Application\browser.exe");
         }
     }
 }
