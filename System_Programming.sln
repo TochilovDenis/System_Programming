@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domains", "Domains\Domains.
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Domians App Forms", "Domians App Forms\Domians App Forms.csproj", "{9DE94FB4-3B7D-4165-8838-8243EC66AE92}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Multithreading", "Multithreading\Multithreading.csproj", "{33F95661-6DD0-4590-910C-619A1529DDA9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{9DE94FB4-3B7D-4165-8838-8243EC66AE92}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9DE94FB4-3B7D-4165-8838-8243EC66AE92}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9DE94FB4-3B7D-4165-8838-8243EC66AE92}.Release|Any CPU.Build.0 = Release|Any CPU
+		{33F95661-6DD0-4590-910C-619A1529DDA9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{33F95661-6DD0-4590-910C-619A1529DDA9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{33F95661-6DD0-4590-910C-619A1529DDA9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{33F95661-6DD0-4590-910C-619A1529DDA9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
