@@ -11,9 +11,9 @@ namespace lesson_01
     {
         static void Main(string[] args)
         {
-            foreach (Process process in Process.GetProcesses())
+            Process[] vsProcs = Process.GetProcessesByName("browser");
+            foreach(var process in vsProcs)
             {
-                // выводим id и имя процесса
                 Console.WriteLine($"ID: {process.Id}  Name: {process.ProcessName}");
             }
 
